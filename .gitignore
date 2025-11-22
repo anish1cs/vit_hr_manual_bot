@@ -1,0 +1,67 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pyd
+*.egg-info/
+*.log
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# FAISS vector store
+# -------------------------
+data/vector_store/
+data/vector_store/*
+
+# Do NOT ignore processed or raw PDF files
+# because they are required by the project
+# data/raw/
+# data/processed/
+
+# -------------------------
+# Ollama cache (optional)
+# -------------------------
+~/.ollama/
+
+# -------------------------
+# Environment variables
+# -------------------------
+.env
+
+# -------------------------
+# Build artifacts
+# -------------------------
+dist/
+build/
+
+# -------------------------
+# Flask session files
+# -------------------------
+flask_session/
+instance/
+
+# -------------------------
+# Reports / generated outputs
+# -------------------------
+*.pdf
+*.docx

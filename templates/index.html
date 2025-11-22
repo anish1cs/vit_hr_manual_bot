@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Policy Bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <div class="main-wrapper">
+        
+        <div class="history-sidebar">
+            <div class="sidebar-header">
+                <h2>History</h2>
+                <button id="new-chat-btn" aria-label="New Chat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>
+            <ul id="history-list">
+                </ul>
+             <div class="sidebar-footer">
+                <button id="clear-all-history">Clear All Chats</button>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="avatar">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#2575EC"/>
+                        <path d="M20 24C23.3137 24 26 21.3137 26 18C26 14.6863 23.3137 12 20 12C16.6863 12 14 14.6863 14 18C14 21.3137 16.6863 24 20 24Z" fill="white" fill-opacity="0.7"/>
+                        <path d="M29 31C29 28.2386 24.9706 26 20 26C15.0294 26 11 28.2386 11 31" fill="white" fill-opacity="0.7"/>
+                    </svg>
+                </div>
+                <div class="agent-info">
+                    <div class="agent-name">HR Policy Bot</div>
+                    <div class="agent-status">Online</div>
+                </div>
+            </div>
+            
+            <div class="chat-window" id="chat-window">
+                </div>
+            
+            <form class="chat-form" id="chat-form">
+                <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+                <button type="submit" id="send-button" aria-label="Send">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="white"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

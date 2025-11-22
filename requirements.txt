@@ -1,0 +1,22 @@
+# Core LangChain libraries
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-ollama
+
+# --- Local Embedding Libraries ---
+langchain-huggingface
+sentence-transformers
+
+# Vector Database
+faiss-cpu
+
+# Document Loading
+pypdf
+
+# Environment variables
+python-dotenv
+
+# Web Server
+Flask
