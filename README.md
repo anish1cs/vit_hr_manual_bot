@@ -46,34 +46,6 @@ LocalStorage persistence
 
 Responsive UI (dark mode)
 
-📁 Project Structure
-vit_hr_manual_bot_testing/
-│── app.py
-│── requirements.txt
-│── README.md
-│── .gitignore
-
-├── scripts/
-│   ├── logic/
-│   │   ├── conversational_logic.py
-│   │   └── multi_query_logic.py
-│   ├── clean_and_prepare.py
-│   ├── build_index.py
-│   └── start_chat.py
-
-├── data/
-│   ├── raw/
-│   │   └── HR_POLICY_merged.pdf
-│   ├── processed/
-│   │   └── cleaned_policy.txt
-│   └── vector_store/
-
-├── templates/
-│   └── index.html
-
-└── static/
-    ├── script.js
-    └── style.css
 
 🔧 Installation
 1️⃣ Install Ollama
@@ -88,6 +60,16 @@ ollama pull gemma:2b
 Make sure Ollama is running:
 
 ollama serve
+
+## 📸 Screenshots
+
+
+### 📁 Project Structure
+![Project Structure](screenshots/structure.png)
+
+### 💬 Chat UI
+![Chat UI](screenshots/chat_ui.png)
+
 
 2️⃣ Create a Virtual Environment
 python -m venv .venv
